@@ -4,7 +4,7 @@ import clienteReducer from '../components/reducer/clienteReducer';
 import Axios from 'axios';
 import Swal from 'sweetalert2'
 
-const baseURL = "http://localhost:9090/api";
+const baseURL = "http://44.203.187.204:9090/api";
 
 export const ClienteContext = createContext();
 

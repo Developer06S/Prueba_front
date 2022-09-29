@@ -5,8 +5,6 @@ import { ModalContext } from "../../contexts/modalContenx";
 
 export const FormCliente = () => {
 
-
- 
   const { setShowModal } = useContext(ModalContext);
   const { registrarCliente, actualizarCliente, clienteActual, obtenerCliente } = useContext(ClienteContext);
 
@@ -15,7 +13,7 @@ export const FormCliente = () => {
     apellidos: '',
     direccion: '',
     telefono: '',
-    email:''
+    email: ''
   }
   const [persona, setPersona] = useState(personaDefault)
   const [mensaje, setMensaje] = useState(null);
@@ -88,7 +86,7 @@ export const FormCliente = () => {
 
       <div className="field is-horizontal">
         <div className="field-label is-normal">
-          <label className="label">Nombre Completo---</label>
+          <label className="label">Nombre Completo</label>
         </div>
         <div className="field-body">
           <div className="field">
@@ -188,7 +186,7 @@ export const FormCliente = () => {
                 onChange={handleChange}
               />
               <span className="icon is-small is-left">
-                <i className="fas fa-phone"></i>
+                <i className="fas fa-envelope"></i>
               </span>
             </div>
           </div>
@@ -211,9 +209,6 @@ export const FormCliente = () => {
           </div>
         </div>
       </div>
-
-
-
     </form>
   )
 
